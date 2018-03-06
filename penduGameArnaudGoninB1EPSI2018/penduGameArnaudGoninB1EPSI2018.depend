@@ -1,11 +1,15 @@
 # depslib dependency file v1.0
-1520375232 source:c:\users\arnau\desktop\cours\m.chevallier\projet\projetjeudupendu\pendugame\pendugamearnaudgoninb1epsi2018\fonction.cpp
+1520376689 source:c:\users\arnau\desktop\cours\m.chevallier\projet\projetjeudupendu\pendugame\pendugamearnaudgoninb1epsi2018\fonction.cpp
 	<iostream>
 	"math.h"
+	<cstdlib>
+	<ctime>
 
-1520375198 source:c:\users\arnau\desktop\cours\m.chevallier\projet\projetjeudupendu\pendugame\pendugamearnaudgoninb1epsi2018\main.cpp
+1520376974 source:c:\users\arnau\desktop\cours\m.chevallier\projet\projetjeudupendu\pendugame\pendugamearnaudgoninb1epsi2018\main.cpp
 	<iostream>
 	"fonction.h"
+	<cstdlib>
+	<ctime>
 
-1520375071 c:\users\arnau\desktop\cours\m.chevallier\projet\projetjeudupendu\pendugame\pendugamearnaudgoninb1epsi2018\fonction.h
+1520376712 c:\users\arnau\desktop\cours\m.chevallier\projet\projetjeudupendu\pendugame\pendugamearnaudgoninb1epsi2018\fonction.h
 
