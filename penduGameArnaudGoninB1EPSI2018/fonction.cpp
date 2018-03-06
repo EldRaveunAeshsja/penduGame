@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include "math.h"
 using namespace std;
 
 char GetCaractere ()
@@ -9,3 +9,4 @@ char GetCaractere ()
     cin >> caractere;
     return caractere;
 }
+

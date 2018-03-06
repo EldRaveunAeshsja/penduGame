@@ -1,16 +1,16 @@
 #include <iostream>
-
+#include "fonction.h"
 using namespace std;
 
 int main()
 {
-    char caractereRecu;
-    cout << "Hello world!" << endl;
 
+    char caractereRecu;
 
     caractereRecu = GetCaractere();
 
     cout << caractereRecu << endl;
+
 
     return 0;
 }
