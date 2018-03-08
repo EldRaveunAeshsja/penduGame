@@ -9,58 +9,71 @@ using namespace std;
 int main()
 {
 
-    char caractereRecu;
-    int mn, mx;
-    int randnombrerRecu;
+    char caractereRecu(0);
+    int mn(0), mx(0);
+    int randnombrerRecu(0);
 
 
 
     /* ---------------------------- */
     /* ---------------------------- */
     int tailleTableau(20);
-    std::string mots[tailleTableau];
-    std::string motsTrouver;
+    string mots[tailleTableau];
+    string motsTrouver("rien");
+    string motCache("*******************");
     //////////////////////////////////
     //tableau
-        mots[0]     =   "un";
-        mots[1]     =   "deux";
-        mots[2]     =   "cinq";
-        mots[3]     =   "rouge";
-        mots[4]     =   "membre";
-        mots[5]     =   "consil";
-        mots[6]     =   "donner";
-        mots[7]     =   "reponse";
-        mots[8]     =   "etat";
-        mots[9]     =   "son";
-        mots[10]    =   "armement";
-        mots[11]    =   "peu";
-        mots[12]    =   "apres";
-        mots[13]    =   "vacances";
-        mots[14]    =   "annonce";
-        mots[15]    =   "mercredi";
-        mots[16]    =   "evident";
-        mots[17]    =   "regime";
-        mots[18]    =   "affirmer";
-        mots[19]    =   "arme";
+        mots [0]    =   "un"        ;
+        mots [1]    =   "deux"      ;
+        mots [2]    =   "cinq"      ;
+        mots [3]    =   "rouge"     ;
+        mots [4]    =   "membre"    ;
+        mots [5]    =   "consil"    ;
+        mots [6]    =   "donner"    ;
+        mots [7]    =   "reponse"   ;
+        mots [8]    =   "etat"      ;
+        mots [9]    =   "son"       ;
+        mots[10]    =   "armement"  ;
+        mots[11]    =   "peu"       ;
+        mots[12]    =   "apres"     ;
+        mots[13]    =   "vacances"  ;
+        mots[14]    =   "annonce"   ;
+        mots[15]    =   "mercredi"  ;
+        mots[16]    =   "evident"   ;
+        mots[17]    =   "regime"    ;
+        mots[18]    =   "affirmer"  ;
+        mots[19]    =   "arme"      ;
      ////////////////////////////////////
     /* ---------------------------- */
     /* ---------------------------- */
 
-    caractereRecu = GetCaractere();
+    bool reponse(NULL);
+    // string *motCache(nullptr);
+    string continuer("yes");
 
-    cout << caractereRecu << endl;
-    cout << "choisissez deux nombres:" << endl;
-    cin >> mn;
-    cin >> mx;
+    while(continuer == "yes")
+        {
+            caractereRecu = GetCaractere();
 
-    randnombrerRecu = GetNombreAleatoire(mn,mx);
+            cout << caractereRecu << endl;
+            cout << "choisissez deux nombres:" << endl;
+            cin >> mn;
+            cin >> mx;
 
-    cout << randnombrerRecu << endl;
+            randnombrerRecu = GetNombreAleatoire(mn,mx);
 
-    motsTrouver = ChoisirMots(mots,tailleTableau);
-    cout << motsTrouver << endl;
+            cout << randnombrerRecu << endl;
 
-
+            motsTrouver = ChoisirMots(mots,tailleTableau);
+            //  motCache =&motsTrouver;
+            motCache.substr(0,motsTrouver.size());
+            cout << motsTrouver << endl;
+/*
+            reponse = TestCaractere(caractereRecu,motsTrouver,&motsTrouver);
+*/
+            cout << "voulez vous continuerz. (yes/no)" << endl;
+            cin >> continuer;
+        }
 
     return 0;
 }

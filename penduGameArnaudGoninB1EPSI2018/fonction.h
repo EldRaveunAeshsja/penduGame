@@ -1,6 +1,7 @@
 #ifndef FONCTION_H_INCLUDED
 #define FONCTION_H_INCLUDED
-
+#include <string>
+using namespace std;
 
 
 /*
@@ -18,8 +19,13 @@ int GetNombreAleatoire(int mn,int mx);
 BLABLABLABLABLABLABLABLABLABLABLA
 BLABLABLABALBALABLABALBALABLABALB
 */
-std::string ChoisirMots(std::string mots[],int tailleTableau);
+string ChoisirMots(std::string mots[],int tailleTableau);
 
+/*
+BLABLABLABLABLABLABLABLABLABLABLA
+BLABLABLABALBALABLABALBALABLABALB
+*/
+bool TestCaractere(char lettre, string mot, string *motCache);
 
 
 

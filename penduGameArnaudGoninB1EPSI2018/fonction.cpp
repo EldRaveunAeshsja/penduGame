@@ -16,12 +16,37 @@ char GetCaractere ()
 
 int GetNombreAleatoire(int mn,int mx)
 {
-    return mn + (int)((double)rand() / (RAND_MAX+1) * (mx-mx+1));
+    return  mn + (rand() * (int)(mx - mn) / RAND_MAX);
 }
 
 
-std::string ChoisirMots(std::string mots[],int tailleTableau)
+string ChoisirMots(string mots[],int tailleTableau)
 {
-    return mots[GetNombreAleatoire(0,100)];
+    return mots[GetNombreAleatoire(15,20)];
 
 }
+/*
+bool TestCaractere(char lettre, string mot, string &motCache)
+{
+    int tailleMot;
+    // string motEtoile("********************");
+    bool reponse(false);
+
+
+    tailleMot(mot.size());
+   // motEtoile.substr(0,mot.size());
+
+    for (int i = 0; i <= tailleMot ; i++)
+    {
+        if (mot[i] == lettre)
+        {
+  //          motEtoile[i] = mot[i];
+            reponse = true;
+        }
+    }
+
+  //  cout << motEtoile << endl;
+    return reponse;
+
+}
+*/
