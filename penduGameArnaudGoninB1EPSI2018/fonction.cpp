@@ -1,7 +1,9 @@
 #include <iostream>
-#include "math.h"
+#include "fonction.h"
 #include <cstdlib>
 #include <ctime>
+#include <string>
+
 using namespace std;
 
 char GetCaractere ()
@@ -14,6 +16,12 @@ char GetCaractere ()
 
 int GetNombreAleatoire(int mn,int mx)
 {
-    return rand()%(mx - mn) + mn;
+    return mn + (int)((double)rand() / (RAND_MAX+1) * (mx-mx+1));
 }
 
+
+std::string ChoisirMots(std::string mots[],int tailleTableau)
+{
+    return mots[GetNombreAleatoire(0,100)];
+
+}

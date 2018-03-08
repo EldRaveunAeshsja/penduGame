@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/arnau/Desktop/Cours/M.Chevallier/Projet/projetJeuDuPendu/penduGame/penduGameArnaudGoninB1EPSI2018/fonction.cpp
+iostream
+-
+fonction.h
+C:/Users/arnau/Desktop/Cours/M.Chevallier/Projet/projetJeuDuPendu/penduGame/penduGameArnaudGoninB1EPSI2018/fonction.h
+cstdlib
+-
+ctime
+-
+string
+-
+
+C:/Users/arnau/Desktop/Cours/M.Chevallier/Projet/projetJeuDuPendu/penduGame/penduGameArnaudGoninB1EPSI2018/fonction.h
+
+C:/Users/arnau/Desktop/Cours/M.Chevallier/Projet/projetJeuDuPendu/penduGame/penduGameArnaudGoninB1EPSI2018/main.cpp
+iostream
+-
+fonction.h
+C:/Users/arnau/Desktop/Cours/M.Chevallier/Projet/projetJeuDuPendu/penduGame/penduGameArnaudGoninB1EPSI2018/fonction.h
+cstdlib
+-
+ctime
+-
+string
+-
+
