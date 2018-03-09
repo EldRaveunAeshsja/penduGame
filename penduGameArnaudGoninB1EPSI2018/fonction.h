@@ -25,7 +25,15 @@ string ChoisirMots(std::string mots[],int tailleTableau);
 BLABLABLABLABLABLABLABLABLABLABLA
 BLABLABLABALBALABLABALBALABLABALB
 */
-bool TestCaractere(char lettre, string mot, string *motCache);
+bool TestCaractere(char lettre, string mot, string &motCache);
+
+/*
+BLABLABLABLABLABLABLABLABLABLABLA
+BLABLABLABALBALABLABALBALABLABALB
+*/
+int Life(bool reponse, int &vie);
+
+
 
 
 

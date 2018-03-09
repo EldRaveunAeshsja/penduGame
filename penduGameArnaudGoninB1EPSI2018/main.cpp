@@ -48,12 +48,17 @@ int main()
     /* ---------------------------- */
 
     bool reponse(NULL);
-    // string *motCache(nullptr);
     string continuer("yes");
+    int vie(10);
+
 
     while(continuer == "yes")
         {
-            caractereRecu = GetCaractere();
+            vie = 10;
+            motsTrouver = ChoisirMots(mots,tailleTableau);
+            //  motCache =&motsTrouver
+            cout << motsTrouver << endl;
+            cout << motCache << endl;
 
             cout << caractereRecu << endl;
             cout << "choisissez deux nombres:" << endl;
@@ -63,17 +68,24 @@ int main()
             randnombrerRecu = GetNombreAleatoire(mn,mx);
 
             cout << randnombrerRecu << endl;
+            while(vie > 0)
+            {
+                caractereRecu = GetCaractere();
+                reponse = TestCaractere(caractereRecu,motsTrouver, motCache);
+                cout << reponse << endl;
 
-            motsTrouver = ChoisirMots(mots,tailleTableau);
-            //  motCache =&motsTrouver;
-            motCache.substr(0,motsTrouver.size());
-            cout << motsTrouver << endl;
-/*
-            reponse = TestCaractere(caractereRecu,motsTrouver,&motsTrouver);
-*/
+                vie = Life(reponse,vie);
+                if(motCache == motsTrouver)
+                {
+                    cout << "VOUS AVEZ GAGNE GG WP" << endl;
+                }
+
+
+            }
             cout << "voulez vous continuerz. (yes/no)" << endl;
             cin >> continuer;
         }
+
 
     return 0;
 }
